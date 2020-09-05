@@ -129,7 +129,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.sampleapp"
+        applicationId "com.sample.nacam403"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
