@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-  package="com.sample.nacam403.2">
+  package="com.sample.nacam4032">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
