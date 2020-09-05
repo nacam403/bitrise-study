@@ -1,4 +1,4 @@
-package com.sampleapp;
+package com.sample.nacam4032;
 
 import com.facebook.react.ReactActivity;
 
