@@ -79,6 +79,9 @@ import com.android.build.OutputFile
 
 project.ext.react = [
     enableHermes: false,  // clean and rebuild if changing
+
+    bundleInStaging: true,
+    devDisabledInStaging: true,
 ]
 
 apply from: "../../node_modules/react-native/react.gradle"
@@ -162,10 +165,14 @@ android {
                 }
             }
         }
+        staging {
+            applicationIdSuffix ".staging"
+            // stagingビルドの署名はBitriseで行うこととし、ここにはsigningConfigの行は書かない。
+            minifyEnabled enableProguardInReleaseBuilds
+            proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+        }
         release {
-            // Caution! In production, you need to generate your own keystore file.
-            // see https://reactnative.dev/docs/signed-apk-android.
-            signingConfig signingConfigs.debug
+            // releaseビルドの署名はBitriseで行うこととし、ここにはsigningConfigの行は書かない。
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
         }
