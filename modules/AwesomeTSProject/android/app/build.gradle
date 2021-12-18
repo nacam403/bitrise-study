@@ -162,6 +162,12 @@ android {
                 }
             }
         }
+        staging {
+            applicationIdSuffix ".staging"
+            // stagingビルドの署名はBitriseで行うこととし、ここにはsigningConfigの行は書かない。
+            minifyEnabled enableProguardInReleaseBuilds
+            proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+        }
         release {
             // releaseビルドの署名はBitriseで行うこととし、ここにはsigningConfigの行は書かない。
             minifyEnabled enableProguardInReleaseBuilds
