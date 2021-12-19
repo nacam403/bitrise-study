@@ -186,6 +186,7 @@
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
+				EBBD47D2276F4B3C00C3B2E4 /* Select GoogleService-info.plist */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				C8AC78B0264D0F9F6F6D630E /* [CP] Embed Pods Frameworks */,
@@ -387,6 +388,24 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AwesomeTSProject/Pods-AwesomeTSProject-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		EBBD47D2276F4B3C00C3B2E4 /* Select GoogleService-info.plist */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Select GoogleService-info.plist";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ \"${CONFIGURATION}\" == \"Debug\" ]; then\n  SUFFIX=debug\nelif [ \"${CONFIGURATION}\" == \"Staging\" ]; then\n  SUFFIX=staging\nelse\n  SUFFIX=release\nfi\n\ncp \"${PROJECT_DIR}/Firebase/GoogleService-Info-${SUFFIX}.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\"\n";
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
 			isa = PBXShellScriptBuildPhase;
