@@ -488,6 +488,8 @@
 			baseConfigurationReference = C0A881CF5CF3F2B244570E2A /* Pods-AwesomeTSProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				BUNDLE_DISPLAY_NAME_PREFIX = Debug_;
+				BUNDLE_ID_SUFFIX = .debug;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
@@ -514,6 +516,8 @@
 			baseConfigurationReference = D00AAFFCFCFDA5787532823F /* Pods-AwesomeTSProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				BUNDLE_DISPLAY_NAME_PREFIX = "";
+				BUNDLE_ID_SUFFIX = "";
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = AwesomeTSProject/Info.plist;
@@ -722,6 +726,8 @@
 			baseConfigurationReference = CC1B647BB810DAD7D2A58E13 /* Pods-AwesomeTSProject.staging.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				BUNDLE_DISPLAY_NAME_PREFIX = Staging_;
+				BUNDLE_ID_SUFFIX = .staging;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = AwesomeTSProject/Info.plist;
