@@ -1,3 +1,7 @@
+# react-native-config
+# https://github.com/luggit/react-native-config#ios-1
+.env
+
 # OSX
 #
 .DS_Store
