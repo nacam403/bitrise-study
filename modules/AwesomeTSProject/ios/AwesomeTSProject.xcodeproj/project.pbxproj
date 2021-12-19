@@ -503,7 +503,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.awesometsproject;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.awesometsproject${BUNDLE_ID_SUFFIX}";
 				PRODUCT_NAME = AwesomeTSProject;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -530,7 +530,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.awesometsproject;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.awesometsproject${BUNDLE_ID_SUFFIX}";
 				PRODUCT_NAME = AwesomeTSProject;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -740,7 +740,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.awesometsproject;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.awesometsproject${BUNDLE_ID_SUFFIX}";
 				PRODUCT_NAME = AwesomeTSProject;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
