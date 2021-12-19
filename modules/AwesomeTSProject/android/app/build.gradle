@@ -141,6 +141,9 @@ android {
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
+
+        // https://github.com/luggit/react-native-config#advanced-android-setup
+        resValue "string", "build_config_package", "com.awesometsproject"
     }
     splits {
         abi {
