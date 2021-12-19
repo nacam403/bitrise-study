@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>188770895025-tiad1q08esnko5mld440fgc0k96s7upb.apps.googleusercontent.com</string>
+	<string>336669157749-i3n0n7a8qa2kl7eo692jm6r678a0bnnh.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.188770895025-tiad1q08esnko5mld440fgc0k96s7upb</string>
+	<string>com.googleusercontent.apps.336669157749-i3n0n7a8qa2kl7eo692jm6r678a0bnnh</string>
 	<key>API_KEY</key>
-	<string>AIzaSyBfNCeHuwvdTcOJ_it1_6JwrrgAK7c4Rpw</string>
+	<string>AIzaSyD_kCx0a820KG9CQIhLDJc38zDHqkHpK4w</string>
 	<key>GCM_SENDER_ID</key>
-	<string>188770895025</string>
+	<string>336669157749</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.awesometsproject.staging</string>
 	<key>PROJECT_ID</key>
-	<string>awesometsproject-ab4de</string>
+	<string>awesometsproject-staging</string>
 	<key>STORAGE_BUCKET</key>
-	<string>awesometsproject-ab4de.appspot.com</string>
+	<string>awesometsproject-staging.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,6 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:188770895025:ios:eb6fc26154ecc8915b0e90</string>
+	<string>1:336669157749:ios:45f0bfafd01283b2758b3c</string>
 </dict>
 </plist>
