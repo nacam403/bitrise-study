@@ -27,6 +27,10 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
+import ReactNativeConfig from 'react-native-config';
+
+const REACT_NATIVE_CONFIG_TYPE = ReactNativeConfig.TYPE;
+
 const Section: React.FC<{
   title: string;
 }> = ({children, title}) => {
@@ -73,6 +77,7 @@ const App = () => {
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
+          <Text>{REACT_NATIVE_CONFIG_TYPE}</Text>
           <Section title="Step One">
             Edit <Text style={styles.highlight}>App.tsx</Text> to change this
             screen and then come back to see your edits.

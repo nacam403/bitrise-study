@@ -1,6 +1,14 @@
 apply plugin: "com.android.application"
 apply plugin: 'com.google.gms.google-services'
 
+// https://github.com/luggit/react-native-config#android-1
+project.ext.envConfigFiles = [
+    debug: ".env.debug",
+    staging: ".env.staging",
+    release: ".env.release",
+]
+apply from: project(':react-native-config').projectDir.getPath() + "/dotenv.gradle"
+
 import com.android.build.OutputFile
 
 /**
@@ -140,6 +148,9 @@ android {
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
+
+        // https://github.com/luggit/react-native-config#advanced-android-setup
+        resValue "string", "build_config_package", "com.awesometsproject"
     }
     splits {
         abi {
