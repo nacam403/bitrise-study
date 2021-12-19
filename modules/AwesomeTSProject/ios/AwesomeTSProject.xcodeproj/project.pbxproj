@@ -14,6 +14,7 @@
 		6172F2D35A4C3AA820D92908 /* libPods-AwesomeTSProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6423831EA8574132BED9D8CC /* libPods-AwesomeTSProject.a */; };
 		7EF68E3733C33B6898317E18 /* libPods-AwesomeTSProject-AwesomeTSProjectTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABFE59519B596E51CEFDCCC0 /* libPods-AwesomeTSProject-AwesomeTSProjectTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		EBEF14FA276F16480001891F /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = EBEF14F9276F16480001891F /* FirebaseAnalyticsWithoutAdIdSupport */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6172F2D35A4C3AA820D92908 /* libPods-AwesomeTSProject.a in Frameworks */,
+				EBEF14FA276F16480001891F /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,6 +186,7 @@
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
+				EBBD47D2276F4B3C00C3B2E4 /* Select GoogleService-info.plist */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				C8AC78B0264D0F9F6F6D630E /* [CP] Embed Pods Frameworks */,
@@ -194,6 +197,9 @@
 			dependencies = (
 			);
 			name = AwesomeTSProject;
+			packageProductDependencies = (
+				EBEF14F9276F16480001891F /* FirebaseAnalyticsWithoutAdIdSupport */,
+			);
 			productName = AwesomeTSProject;
 			productReference = 13B07F961A680F5B00A75B9A /* AwesomeTSProject.app */;
 			productType = "com.apple.product-type.application";
@@ -224,6 +230,9 @@
 				Base,
 			);
 			mainGroup = 83CBB9F61A601CBA00E9B192;
+			packageReferences = (
+				EBEF14F8276F16480001891F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -379,6 +388,24 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AwesomeTSProject/Pods-AwesomeTSProject-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		EBBD47D2276F4B3C00C3B2E4 /* Select GoogleService-info.plist */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Select GoogleService-info.plist";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ \"${CONFIGURATION}\" == \"Debug\" ]; then\n  SUFFIX=debug\nelif [ \"${CONFIGURATION}\" == \"Staging\" ]; then\n  SUFFIX=staging\nelse\n  SUFFIX=release\nfi\n\ncp \"${PROJECT_DIR}/Firebase/GoogleService-Info-${SUFFIX}.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\"\n";
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -806,6 +833,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EBEF14F8276F16480001891F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EBEF14F9276F16480001891F /* FirebaseAnalyticsWithoutAdIdSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EBEF14F8276F16480001891F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsWithoutAdIdSupport;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 83CBB9F71A601CBA00E9B192 /* Project object */;
 }

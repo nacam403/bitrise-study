@@ -47,6 +47,10 @@ static void InitializeFlipper(UIApplication *application) {
   rootViewController.view = rootView;
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
+
+  // Firebase用の設定
+  [FIRApp configure];
+
   return YES;
 }
 
