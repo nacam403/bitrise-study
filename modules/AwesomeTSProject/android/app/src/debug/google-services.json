@@ -29,6 +29,13 @@
             {
               "client_id": "510118718400-f8i37827p75chmt9btunddbbl10bg00p.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "510118718400-7c0ehng133o67n1avmd6ka0hp5tdqlv2.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.awesometsproject.debug"
+              }
             }
           ]
         }
